@@ -2,7 +2,7 @@
   "name": "secure-crypto-kit",
   "version": "1.0.0",
   "description": "End-to-end hybrid encryption (RSA-OAEP + AES-256-GCM) with replay protection and HMAC integrity for browser ↔ Node.js communication.",
-  "author": "Your Name <you@example.com>",
+  "author": "Subhransu Sekhar Panda",
   "license": "MIT",
   "keywords": [
     "encryption", "rsa", "aes-gcm", "webcrypto",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/secure-crypto-kit.git"
+    "url": "https://github.com/Subhransu02/secure-crypto-kit.git"
   },
   "exports": {
     ".": {
