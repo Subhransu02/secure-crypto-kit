@@ -1,0 +1,21 @@
+# Source (shipped separately under /src, dist is what consumers use)
+src/**/*.test.ts
+src/**/*.spec.ts
+
+# Config / tooling
+tsup.config.ts
+tsconfig.json
+.eslintrc*
+.prettierrc*
+vitest.config*
+
+# Dev files
+.env
+.env.*
+*.log
+node_modules/
+
+# CI / repo
+.github/
+.vscode/
+coverage/
