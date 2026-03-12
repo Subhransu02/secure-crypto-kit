@@ -1,12 +1,18 @@
 {
   "name": "secure-crypto-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "End-to-end hybrid encryption (RSA-OAEP + AES-256-GCM) with replay protection and HMAC integrity for browser ↔ Node.js communication.",
   "author": "Subhransu Sekhar Panda",
   "license": "MIT",
   "keywords": [
-    "encryption", "rsa", "aes-gcm", "webcrypto",
-    "hybrid-encryption", "replay-protection", "hmac", "security"
+    "encryption",
+    "rsa",
+    "aes-gcm",
+    "webcrypto",
+    "hybrid-encryption",
+    "replay-protection",
+    "hmac",
+    "security"
   ],
   "repository": {
     "type": "git",
@@ -14,24 +20,24 @@
   },
   "exports": {
     ".": {
-      "import":  "./dist/esm/index.mjs",
+      "import": "./dist/esm/index.mjs",
       "require": "./dist/cjs/index.mjs",
-      "types":   "./dist/types/index.d.mts"
+      "types": "./dist/types/index.d.mts"
     },
     "./fe": {
-      "import":  "./dist/esm/fe/index.mjs",
+      "import": "./dist/esm/fe/index.mjs",
       "require": "./dist/cjs/fe/index.mjs",
-      "types":   "./dist/types/fe/index.d.mts"
+      "types": "./dist/types/fe/index.d.mts"
     },
     "./be": {
       "require": "./src/be/index.js",
-      "import":  "./src/be/index.js",
-      "types":   "./src/be/index.d.ts"
+      "import": "./src/be/index.js",
+      "types": "./src/be/index.d.ts"
     }
   },
-  "main":   "./src/be/index.js",
+  "main": "./src/be/index.js",
   "module": "./dist/esm/index.js",
-  "types":  "./dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist",
     "src",
@@ -39,27 +45,29 @@
     "LICENSE"
   ],
   "scripts": {
-    "build":          "tsup",
-    "build:watch":    "tsup --watch",
-    "typecheck":      "tsc --noEmit",
-    "test":           "vitest run",
-    "test:watch":     "vitest",
-    "lint":           "eslint src --ext .ts,.js",
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts,.js",
     "prepublishOnly": "npm run typecheck && npm run build"
   },
   "devDependencies": {
-    "@types/node":    "^20.0.0",
+    "@types/node": "^20.0.0",
     "@types/express": "^4.17.21",
-    "typescript":     "^5.4.0",
-    "tsup":           "^8.0.0",
-    "vitest":         "^1.0.0",
-    "eslint":         "^8.0.0"
+    "typescript": "^5.4.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0"
   },
   "peerDependenciesMeta": {
-    "express": { "optional": true }
+    "express": {
+      "optional": true
+    }
   },
   "engines": {
     "node": ">=18.0.0"
