@@ -14,14 +14,14 @@
   },
   "exports": {
     ".": {
-      "import":  "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types":   "./dist/types/index.d.ts"
+      "import":  "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.mjs",
+      "types":   "./dist/types/index.d.mts"
     },
     "./fe": {
-      "import":  "./dist/esm/fe/index.js",
-      "require": "./dist/cjs/fe/index.js",
-      "types":   "./dist/types/fe/index.d.ts"
+      "import":  "./dist/esm/fe/index.mjs",
+      "require": "./dist/cjs/fe/index.mjs",
+      "types":   "./dist/types/fe/index.d.mts"
     },
     "./be": {
       "require": "./src/be/index.js",
